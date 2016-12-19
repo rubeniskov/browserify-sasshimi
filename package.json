@@ -27,5 +27,7 @@
     "sasshimi": "^0.0.1",
     "browserify-transform-tools": "^1.7.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "miniquery": "^1.1.2"
+  }
 }
