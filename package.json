@@ -1,0 +1,31 @@
+{
+  "name": "browserify-sasshimi",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubeniskov/browserify-sasshimi.git",
+    "url_commit": "git+https://github.com/rubeniskov/browserify-sasshimi/commit",
+    "url_tag": "git+https://github.com/rubeniskov/browserify-sasshimi/releases/tag"
+  },
+  "author": {
+    "name": "Rubén López Gómez",
+    "email": "me@rubeniskov.com",
+    "url": "https://twitter.com/Rubeniskov"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubeniskov/browserify-sasshimi/issues"
+  },
+  "homepage": "http://browserify-sasshimi.rubeniskov.com",
+  "dependencies": {
+    "sasshimi": "^0.0.1",
+    "browserify-transform-tools": "^1.7.0"
+  },
+  "devDependencies": {}
+}
