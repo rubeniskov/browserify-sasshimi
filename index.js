@@ -8,10 +8,11 @@ module.exports = tools.makeStringTransform(pkg.name, {
     includeExtensions: sasshimi.defaults.extensions,
     evaluateArguments: true
 }, function(content, options, done) {
-    var self = this;
+    var self = this,
+        cfgdir = options.configData.configDir ? options.configData.configDir : process.cwd();
     sasshimi.create(options.file, Object.assign({
         paths: ((typeof(options.config.paths) === 'string' ? [options.config.paths] : options.config.paths) || []).map(function(dir) {
-            return path.resolve(options.configData.configDir, dir);
+            return path.resolve(cfgdir, dir);
         })
     }), function(result) {
         emitDependencies(self, result.stats.includedFiles);
