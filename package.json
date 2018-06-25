@@ -5,7 +5,9 @@
   "main": "index.js",
   "browser": "browser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,10 +27,12 @@
   "homepage": "http://browserify-sasshimi.rubeniskov.com",
   "dependencies": {
     "sasshimi": "^0.0.2",
-    "browserify-transform-tools": "^1.7.0"
+    "browserify-transform-tools": "^1.7.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "miniquery": "^1.1.2",
     "npm-bump": "0.0.20"
-  }
+  },
+  "snyk": true
 }
